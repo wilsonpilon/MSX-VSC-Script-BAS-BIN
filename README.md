@@ -55,3 +55,8 @@ NBASIC (MSX)
 1: Obrigatorio
 
 2: Obrigatorio em Unix e variantes
+
+# Introducao Rapida
+Abra o Visual Studio Code e abra a pasta do repositorio. Edite os arquivos em SOURCE. Para compilar Pressione [CTRL}+[SHIFT]+[B].
+
+Edite o arquivo MakeWin/MakeLin para refletir seus parametros
