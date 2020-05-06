@@ -12,7 +12,7 @@ Inspirado no [_MSX Pascal Project Template_](https://github.com/decocq-stuff/msx
 
 [MSX Basic Tokenizer](https://github.com/farique1/MSX-Basic-Tokenizer) (Python) (Multi) 1 
 
-[Visual Studio Code](https://code.visualstudio.com/) / [Code-OSS](https://github.com/microsoft/vscode) (Multi) 1 
+[Visual Studio Code](https://code.visualstudio.com/) / [Code-OSS](https://flathub.org/apps/details/com.visualstudio.code.oss) (Multi) 1 
 
 [DosToUnix](http://dos2unix.sourceforge.net/) (Multi) 2 
 
