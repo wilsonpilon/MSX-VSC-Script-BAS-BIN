@@ -5,7 +5,7 @@ VSC Script to Make MSX Software (**BASIC/ASM**)
 
 Script basico para compilacao_ de programas MSX em BASIC e Assembly a partir do **Visual Studio Code**.
 
-Inspirado no _MSX Pascal Project Template_ (https://github.com/decocq-stuff/msx-pascal-project-template)
+Inspirado no [_MSX Pascal Project Template_](https://github.com/decocq-stuff/msx-pascal-project-template)
 
 ## Este Script Usa: 
 [MSX Basic Dignified](https://github.com/farique1/msx-basic-dignified) (Python) (Multi) 1
