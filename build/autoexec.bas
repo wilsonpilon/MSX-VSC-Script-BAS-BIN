@@ -1,3 +1,6 @@
-10 bload "program.bin",r 
-20 bload "program.alf",s,-2560 
-30 run "program.bas" 
+10 bload "program.bin",r
+
+20 bload "program.alf",s,-&HA00
+
+30 run "program.bas"
+

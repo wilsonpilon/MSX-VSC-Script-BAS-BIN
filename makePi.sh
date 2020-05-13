@@ -30,10 +30,10 @@ export MakeALF=false
 export Source="source"
 export Tools="bin"
 export Build="build"
-export emulPath="/usr/local/bin/openmsx"
-export emulArgs="-machine msx1_eu -ext Sharp_HB-3600 -script program.tcl -diskb diskb/"
-#export emulPath="/usr/local/bin/fmsx"
-#export emulArgs="-home /usr/local/bin -msx1 -diskb $Build/$DiskNameB"
+#export emulPath="/usr/local/bin/openmsx"
+#export emulArgs="-machine msx1_eu -ext Sharp_HB-3600 -script program.tcl -diskb diskb/"
+export emulPath="/usr/local/bin/fmsx"
+export emulArgs="-home /usr/local/share/fMSX -msx1 -diskb $Build/$DiskNameB"
 
 echo $(date)-[definicoes]: Variaveis Globais Configuradas
 
@@ -43,10 +43,10 @@ echo $(date)-[definicoes]: Variaveis Globais Configuradas
 #          Tdos: caminho da ferramenta de conversao UNIX -> DOS
 #         Tunix: caminho da ferramenta de conversao DOS -> UNIX
 #  CopyToFloppy: Comando para criacao e adicao de arquivos a imagem
-export compile="$Tools/pasmo"
-export disktool="$Tools/wrdsk"
-export Tdos="$Tools/unix2dos"
-export Tunix="$Tools/dos2unix"
+export compile="pasmo"
+export disktool="wrdsk"
+export Tdos="unix2dos"
+export Tunix="dos2unix"
 export CopyToFloppy="$disktool $Build/$DiskName"
 export CopyToFloppyB="$disktool $Build/$DiskNameB"
 export token="$Tools/msxbadig.py"
@@ -61,8 +61,8 @@ echo $(date)-[definicoes]: Variaveis Locais Configuradas
 #     ALFaux: Lista de arquivos auxiliares de fontes a serem compilados
 #             e nao incorporados no PROGRAM.BIN
 export BADaux="ataque base combate"
-export ASMaux="teste abc"
-export ALFaux=
+export ASMaux=""
+export ALFaux=""
 
 clear
 
@@ -78,6 +78,7 @@ function runemulator {
         echo $(date) -  make : Attempt to launch emulator
 	    if [ -f $emulPath ] 
 		then
+            echo $emulPath $emulArgs -diska $Build/$DiskName
             $emulPath $emulArgs -diska $Build/$DiskName
         fi
     fi
