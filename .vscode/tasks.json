@@ -5,7 +5,7 @@
     "tasks": [
         {
             "label": "make",
-            "command": "./makePi.sh",
+            "command": "makeWin.bat",
             "args": [
                 ""
             ],
